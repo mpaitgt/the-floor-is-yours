@@ -1,5 +1,5 @@
 import React, {Fragment, useState, useEffect} from 'react';
-import Logo from '../../Images/floor-is-yours-logo.png';
+import Logo from '../../Images/logo-2.png';
 import Grow from '@material-ui/core/Grow';
 import { makeStyles } from '@material-ui/core/styles';
 import {Grid, Typography, Container, Box} from '@material-ui/core';
