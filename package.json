@@ -2,7 +2,7 @@
   "name": "floor",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://mpaitgt.github.io/the-floor-is-yours",
+  "homepage": "https://mpaitgt.github.io/tfiy",
   "dependencies": {
     "@material-ui/core": "^4.9.2",
     "@material-ui/icons": "^4.9.1",
