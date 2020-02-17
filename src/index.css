@@ -1,0 +1,48 @@
+:root {
+  --maroon: #5a2a40;
+  --lightblue: #a9b0c0;
+  --dark-gray: #404040;
+  --black: #747474;
+  --white: #f2f2f2;
+  /* background: linear-gradient(30deg, #5a2a40, #a9b0c0); */
+}
+
+body {
+  margin: 0;
+  font-family: 'Nanum Gothic', sans-serif;
+  color: var(--white);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: linear-gradient(30deg, var(--maroon), var(--black));
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 100vh;
+  position: relative;
+  /* color: #ffffff2c */
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+#bg {
+  background-image: url('../src/Images/cover-image-1500.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  height: 100vh;
+  position: fixed;
+  width: 100%;
+  z-index: -1;
+  opacity: 0.05;
+
+}
+/* 
+font-family: 'Kaushan Script', cursive;
+font-family: 'Bad Script', cursive;
+font-family: 'Mr Dafoe', cursive; */
+/* 
+font-family: 'Permanent Marker', cursive;
+font-family: 'Homemade Apple', cursive; */
