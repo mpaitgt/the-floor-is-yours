@@ -49,7 +49,7 @@ const useStyles = makeStyles({
 function Home() {
   const [checked, setChecked] = useState(false);
   const classes = useStyles();
-  const classTypes = ['Pole', 'Lap & Strip', 'Aerial Silks', 'Yoga', 'Burlesque', 'Zumba', 'Hip Hop', 'Belly Dance', 'Salsa', 'SexyHeels', 'Praise Dancing'];
+  const classTypes = ['Pole', 'Lap & Strip', 'Aerial Silks', 'Yoga', 'Burlesque', 'Zumba', 'Hip Hop', 'Belly Dance', 'Salsa', 'SexyHeels'];
 
   useEffect(() => {
     setChecked(prev => !prev)
