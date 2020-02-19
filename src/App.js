@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as HashRouter, Switch, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Navbar from './Components/Navbar/Navbar';
 import Home from './Components/Home/Home';
 import About from './Components/About/About';
@@ -11,7 +11,7 @@ import {ScheduleProvider} from './Components/Providers/ScheduleProvider';
 function App() {
   
   return (
-    <HashRouter basename='/'>
+    <Router basename='/'>
       <ScheduleProvider>
       <Navbar />
         <Switch>
@@ -22,7 +22,7 @@ function App() {
         </Switch>
       <Footer />
       </ScheduleProvider>
-    </HashRouter>
+    </Router>
   )
 }
 
