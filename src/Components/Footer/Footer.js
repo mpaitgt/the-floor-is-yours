@@ -30,9 +30,9 @@ export default function Footer() {
           <img src={Logo} width="50%" alt="The Floor is Yours logo" />
         </Grid>
         <Grid item sm={6}>
-          <p className={classes.content}>Address Line 1</p>
-          <p className={classes.content}>City, State, Zip</p>
-          <p className={classes.content}>Phone</p>
+          <p className={classes.content}>2 Division Street, Suite 5</p>
+          <p className={classes.content}>Somerville, NJ, 08876</p>
+          {/* <p className={classes.content}></p> */}
         </Grid>
       </Grid>
     // </Container>
