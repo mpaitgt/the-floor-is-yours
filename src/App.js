@@ -11,7 +11,7 @@ import {ScheduleProvider} from './Components/Providers/ScheduleProvider';
 function App() {
   
   return (
-    <Router basename='/'>
+    <Router basename={`${process.env.PUBLIC_URL}`}>
       <ScheduleProvider>
       <Navbar />
         <Switch>
