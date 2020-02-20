@@ -1,29 +1,29 @@
 {
   "files": {
-    "main.css": "www.thefloorisyoursdancecenter.com/static/css/main.d6670ca9.chunk.css",
-    "main.js": "www.thefloorisyoursdancecenter.com/static/js/main.f8da2064.chunk.js",
-    "main.js.map": "www.thefloorisyoursdancecenter.com/static/js/main.f8da2064.chunk.js.map",
-    "runtime-main.js": "www.thefloorisyoursdancecenter.com/static/js/runtime-main.8ad9fdba.js",
-    "runtime-main.js.map": "www.thefloorisyoursdancecenter.com/static/js/runtime-main.8ad9fdba.js.map",
-    "static/js/2.a3173ef3.chunk.js": "www.thefloorisyoursdancecenter.com/static/js/2.a3173ef3.chunk.js",
-    "static/js/2.a3173ef3.chunk.js.map": "www.thefloorisyoursdancecenter.com/static/js/2.a3173ef3.chunk.js.map",
-    "index.html": "www.thefloorisyoursdancecenter.com/index.html",
-    "precache-manifest.47f4751281db7870f2913735cc55545b.js": "www.thefloorisyoursdancecenter.com/precache-manifest.47f4751281db7870f2913735cc55545b.js",
-    "service-worker.js": "www.thefloorisyoursdancecenter.com/service-worker.js",
-    "static/css/main.d6670ca9.chunk.css.map": "www.thefloorisyoursdancecenter.com/static/css/main.d6670ca9.chunk.css.map",
-    "static/js/2.a3173ef3.chunk.js.LICENSE.txt": "www.thefloorisyoursdancecenter.com/static/js/2.a3173ef3.chunk.js.LICENSE.txt",
-    "static/media/index.css": "www.thefloorisyoursdancecenter.com/static/media/cover-image-1500.f0777fc3.png",
-    "static/media/hip-hop-image-1500.png": "www.thefloorisyoursdancecenter.com/static/media/hip-hop-image-1500.f027d73e.png",
-    "static/media/logo-2.png": "www.thefloorisyoursdancecenter.com/static/media/logo-2.3b7abe49.png",
-    "static/media/pole-image-1500.png": "www.thefloorisyoursdancecenter.com/static/media/pole-image-1500.a7bb5ab2.png",
-    "static/media/salsa-image-1500.png": "www.thefloorisyoursdancecenter.com/static/media/salsa-image-1500.2f8d8830.png",
-    "static/media/silks-image-1500.png": "www.thefloorisyoursdancecenter.com/static/media/silks-image-1500.4208d878.png",
-    "static/media/yoga-image-1500.png": "www.thefloorisyoursdancecenter.com/static/media/yoga-image-1500.614b4e78.png"
+    "main.css": "/static/css/main.d0e0010c.chunk.css",
+    "main.js": "/static/js/main.624a4dae.chunk.js",
+    "main.js.map": "/static/js/main.624a4dae.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.8041961b.js",
+    "runtime-main.js.map": "/static/js/runtime-main.8041961b.js.map",
+    "static/js/2.a3173ef3.chunk.js": "/static/js/2.a3173ef3.chunk.js",
+    "static/js/2.a3173ef3.chunk.js.map": "/static/js/2.a3173ef3.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.3f852743ad79145d1af6a022d49c0359.js": "/precache-manifest.3f852743ad79145d1af6a022d49c0359.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/main.d0e0010c.chunk.css.map": "/static/css/main.d0e0010c.chunk.css.map",
+    "static/js/2.a3173ef3.chunk.js.LICENSE.txt": "/static/js/2.a3173ef3.chunk.js.LICENSE.txt",
+    "static/media/index.css": "/static/media/cover-image-1500.f0777fc3.png",
+    "static/media/hip-hop-image-1500.png": "/static/media/hip-hop-image-1500.f027d73e.png",
+    "static/media/logo-2.png": "/static/media/logo-2.3b7abe49.png",
+    "static/media/pole-image-1500.png": "/static/media/pole-image-1500.a7bb5ab2.png",
+    "static/media/salsa-image-1500.png": "/static/media/salsa-image-1500.2f8d8830.png",
+    "static/media/silks-image-1500.png": "/static/media/silks-image-1500.4208d878.png",
+    "static/media/yoga-image-1500.png": "/static/media/yoga-image-1500.614b4e78.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.8ad9fdba.js",
+    "static/js/runtime-main.8041961b.js",
     "static/js/2.a3173ef3.chunk.js",
-    "static/css/main.d6670ca9.chunk.css",
-    "static/js/main.f8da2064.chunk.js"
+    "static/css/main.d0e0010c.chunk.css",
+    "static/js/main.624a4dae.chunk.js"
   ]
 }
