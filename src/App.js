@@ -11,7 +11,7 @@ import {ScheduleProvider} from './Components/Providers/ScheduleProvider';
 function App() {
   
   return (
-    <Router basename="folder1">
+    <Router basename="/">
       <ScheduleProvider>
       <Navbar />
         <Switch>
