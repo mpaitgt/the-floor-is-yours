@@ -46,16 +46,16 @@ function About() {
             <Box className={classes.about}>
             <Header>About</Header>
             <Typography variant="body1" className={classes.paragraph}>
-              Our goal at The Floor Is Yours Dance Center is to help our students boost their confidence, get in shape, have fun , meet new people and be the life of every party!
+              Our goal at The Floor Is Yours Dance Center is to help our students boost their confidence, get in shape, have fun, meet new people and be the life of every party!
             </Typography>
             <Typography variant="body1" className={classes.paragraph}>
-              We have done this be creating a safe & fun enviroment for our students & having some of the most talented teachers in the state.
+              We have done this by creating a safe and fun enviroment for our students, and introducing them to some of the most talented teachers in the state.
             </Typography>
             <Typography variant="body1" className={classes.paragraph}>
-              Our studio is Located right in the Heart of Downtown Somerville, NJ . You can check out our local stores on Division Street, grab a coffee at our local coffee shops or enjoy a night out with your girlfriends with some of the best Restaurants & Breweries we have to offer!
+              Our studio is located right in the heart of downtown Somerville, NJ, where you can check out our local stores on Division Street, grab a coffee at our local coffee shops or enjoy a night out with your girlfriends at some of the best restaurants and breweries we have to offer!
             </Typography>
             <Typography variant="body1" className={classes.paragraph}>
-              Your first class will always be on us ,stop in a little ealier or stay afterwards and meet your instructor and tell us a bit about yourself!
+              Your first class will always be on us. Stop in a little early or stay afterward so you can meet your instructor and tell us a bit about yourself.
             </Typography>
             <Typography variant="body1" className={classes.paragraph}>
               We are excited to have you join us at The Floor is Yours Dance Center! 

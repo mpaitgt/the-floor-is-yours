@@ -49,7 +49,7 @@ const useStyles = makeStyles({
 function Home() {
   const [checked, setChecked] = useState(false);
   const classes = useStyles();
-  const classTypes = ['Pole', 'Lap & Strip', 'Aerial Silks', 'Yoga', 'Burlesque', 'Zumba', 'Hip Hop', 'Belly Dance', 'Salsa', 'SexyHeels'];
+  const classTypes = ['Pole', 'Aerial Silks', 'Yoga', 'Burlesque', 'Zumba', 'Hip Hop', 'Belly Dance', 'Salsa'];
 
   useEffect(() => {
     setChecked(prev => !prev)
@@ -67,13 +67,13 @@ function Home() {
           </Grid>
           <Grid item sm={12}>
             <Typography variant="h4" align="center" className={classes.tag}>
-              We are a diverse group of women from different locations around New Jersey & New York. 
+              We are a diverse group of women from different locations around New Jersey and New York. 
             </Typography>
           </Grid>
           <Fragment className={classes.twocolumn}>
             <Grid item sm={12} justify="center">
               <Typography variant="body1" align="center" className={classes.content}>
-                One thing we all have in common is our passion for dance, we speciallize in diffrent styles of dance:
+                One thing we all have in common is our passion for dance, we specialize in diffrent styles of dance:
                 <Box style={{ marginTop: '20px' }}>
                 {classTypes.map(item => {
                   return (

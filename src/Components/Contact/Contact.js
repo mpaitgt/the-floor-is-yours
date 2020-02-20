@@ -51,7 +51,7 @@ export default function Contact() {
             <form style={{ margin: '0 auto', width: 'auto' }}>
               <TextField color="inherit" id="standard-basic" label="Name" className={classes.input} fullWidth/>
               <TextField color="inherit" id="standard-basic" label="Email" className={classes.input} fullWidth/>
-
+              <TextField color="inherit" id="standard-basic" label="Style" className={classes.input} fullWidth/>
               <TextField 
               id="outlined-multiline-static" 
               rows="10" 
