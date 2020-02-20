@@ -2,7 +2,7 @@
   "name": "floor",
   "version": "0.1.0",
   "private": true,
-  "homepage": "www.thefloorisyoursdancecenter.com",
+  "homepage": "http://www.thefloorisyoursdancecenter.com",
   "dependencies": {
     "@material-ui/core": "^4.9.2",
     "@material-ui/icons": "^4.9.1",
