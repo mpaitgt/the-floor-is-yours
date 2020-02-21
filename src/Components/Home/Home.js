@@ -56,8 +56,6 @@ function Home() {
     console.log(process.env.PUBLIC_URL);
   }, [])
 
-  
-
   return (
     <Grow in={checked}>
       <Container className={classes.root}>
