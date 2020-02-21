@@ -51,7 +51,7 @@ export const ScheduleArray = [
   },
   {
     id: 3,
-    class_type: 'Striptease & Lap',
+    class_type: 'Aerial Silks',
     class_day: 'Wednesdays',
     class_time: '6:00pm',
     class_details: 'Every 2nd & 4rd week of the month',
@@ -59,7 +59,7 @@ export const ScheduleArray = [
   },
   {
     id: 4,
-    class_type: 'Striptease & Lap',
+    class_type: 'Aerial Silks',
     class_day: 'Wednesday',
     class_time: ' 7:00pm',
     class_details: 'Every 2nd & 4rd week of the month',
@@ -67,7 +67,7 @@ export const ScheduleArray = [
   },
   {
     id: 5,
-    class_type: 'Striptease & Lap',
+    class_type: 'Aerial Silks',
     class_day: 'Sundays',
     class_time: '3:00pm',
     class_details: 'Every 2nd & 4rd week of the month',
@@ -75,7 +75,7 @@ export const ScheduleArray = [
   },
   {
     id: 6,
-    class_type: 'Striptease & Lap',
+    class_type: 'Aerial Silks',
     class_day: 'Sundays',
     class_time: '4:00pm',
     class_details: 'Every 2nd & 4rd week of the month',

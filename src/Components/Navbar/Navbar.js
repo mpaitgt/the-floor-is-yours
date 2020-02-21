@@ -58,12 +58,12 @@ function Navbar() {
             </Button>
         </Link>
         <div style={{ float: 'right' }}>
-        {/* <Link to="https://www.facebook.com"> */}
+        <a href="https://www.facebook.com/thefloorisyoursdancecntr/?modal=admin_todo_tour" target="_blank" rel="noreferrer noopener">
             <FacebookIcon className={classes.link} fontSize="large"/>
-        {/* </Link> */}
-        {/* <Link to="https://www.instgram.com"> */}
+        </a>
+        <a href="https://www.instagram.com/thefloorisyoursdancecntr/" target="_blank" rel="noreferrer noopener">
             <InstagramIcon className={classes.link} fontSize="large"/>
-        {/* </Link> */}
+        </a>
         </div>
       </Toolbar>
     </Appbar>

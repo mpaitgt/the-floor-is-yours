@@ -15,7 +15,12 @@ const useStyles = makeStyles(theme => ({
     alignItems: 'center',
   },
   content: {
-    color: '#a9b0c0'
+    color: '#f2f2f2'
+  },
+  email: {
+    textDecoration: 'none',
+    color: 'inherit',
+    fontWeight: 'bold'
   }
 }))
 
@@ -32,6 +37,11 @@ export default function Footer() {
         <Grid item sm={6}>
           <p className={classes.content}>2 Division Street, Suite 5</p>
           <p className={classes.content}>Somerville, NJ, 08876</p>
+          <p className={classes.content}>
+            Email: <a href="mailto:letsdance@thefloorisyoursdancecenter.com" className={classes.email}>letsdance@thefloorisyoursdancecenter.com</a>
+          </p>
+          
+          
           {/* <p className={classes.content}></p> */}
         </Grid>
       </Grid>

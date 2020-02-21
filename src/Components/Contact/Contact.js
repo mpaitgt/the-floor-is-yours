@@ -45,7 +45,7 @@ export default function Contact() {
   }, [])
 
   const handleSubmit = e => {
-    e.preventDefault();
+    // e.preventDefault();
 
     let templateParams = {
       name: name,
@@ -53,8 +53,6 @@ export default function Contact() {
       style: style,
       message: message
     };
-
-    console.log(templateParams);
 
     emailjs.send(
       'gmail',
@@ -65,16 +63,6 @@ export default function Contact() {
      .then(res => console.log('SUCCESS!', res.status, res.text))
      .catch(err => console.log('FAILED...', err));
 
-    // setInquiry({
-    //   name: '',
-    //   email: '',
-    //   style: '',
-    //   message: ''
-    // });
-  }
-
-  const handleChange = e => {
-    [e.target.name] = e.target.value
   }
 
   return (
