@@ -45,7 +45,7 @@ export default function Contact() {
   }, [])
 
   const handleSubmit = e => {
-    // e.preventDefault();
+    e.preventDefault();
 
     let templateParams = {
       name: name,
