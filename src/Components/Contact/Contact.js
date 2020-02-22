@@ -46,23 +46,30 @@ export default function Contact() {
 
   const handleSubmit = e => {
     e.preventDefault();
-
     let templateParams = {
       name: name,
       email: email,
       style: style,
       message: message
     };
-
     emailjs.send(
       'gmail',
       'the_floor_is_yours',
       templateParams,
       'user_hj9lyTMwrU1mbY0EF1xh0'
      )
-     .then(res => console.log('SUCCESS!', res.status, res.text))
+     .then(res => {
+       console.log('SUCCESS!', res.status, res.text);
+       clearForm();
+     })
      .catch(err => console.log('FAILED...', err));
+  }
 
+  const clearForm = () => {
+    setName('');
+    setEmail('');
+    setStyle('');
+    setMessage('');
   }
 
   return (
