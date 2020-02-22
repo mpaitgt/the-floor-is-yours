@@ -38,6 +38,7 @@ export default function Contact() {
   const [email, setEmail] = useState('');
   const [style, setStyle] = useState('');
   const [message, setMessage] = useState('');
+  const [sent, setSent] = useState(false);
   const classes = useStyles();
 
   useEffect(() => {
@@ -60,6 +61,7 @@ export default function Contact() {
      )
      .then(res => {
        console.log('SUCCESS!', res.status, res.text);
+       setSent(true);
        clearForm();
      })
      .catch(err => console.log('FAILED...', err));
