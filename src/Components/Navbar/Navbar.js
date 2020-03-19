@@ -1,8 +1,9 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import Appbar from '@material-ui/core/AppBar';
-import { makeStyles, Toolbar, IconButton, Button } from '@material-ui/core';
-import MenuIcon from '@material-ui/icons/Menu';
+import { makeStyles, Toolbar, IconButton, Button, Typography } from '@material-ui/core';
+// import MenuIcon from '@material-ui/icons/Menu';
+import SocialIcons from '../SocialIcons/SocialIcons';
 import FacebookIcon from '@material-ui/icons/Facebook';
 import InstagramIcon from '@material-ui/icons/Instagram';
 
@@ -34,22 +35,27 @@ function Navbar() {
   return (
     <Appbar className={classes.root} position="relative">
       <Toolbar>
-        <IconButton edge="start" className={classes.menuButton} color="inherit" aria-label="menu">
+        {/* <IconButton edge="start" className={classes.menuButton} color="inherit" aria-label="menu">
           <MenuIcon />
-        </IconButton>
+        </IconButton> */}
         <Link to="/" style={{ textDecoration: 'none' }}>
           <Button className={classes.link}>
-            Home
+          Home
           </Button>
         </Link>
         <Link to="/about" style={{ textDecoration: 'none' }}>
             <Button className={classes.link}>
-              About
+              About Us
+            </Button>
+        </Link>
+        <Link to="/classes" style={{ textDecoration: 'none' }}>
+            <Button className={classes.link}>
+              Classes
             </Button>
         </Link>
         <Link to="/schedule" style={{ textDecoration: 'none' }}>
             <Button className={classes.link}>
-              Classes
+              Schedule
             </Button>
         </Link>
         <Link to="/contact" style={{ textDecoration: 'none' }}>
@@ -57,14 +63,7 @@ function Navbar() {
               Contact
             </Button>
         </Link>
-        <div style={{ float: 'right' }}>
-        <a href="https://www.facebook.com/thefloorisyoursdancecntr/?modal=admin_todo_tour" target="_blank" rel="noreferrer noopener">
-            <FacebookIcon className={classes.link} fontSize="large"/>
-        </a>
-        <a href="https://www.instagram.com/thefloorisyoursdancecntr/" target="_blank" rel="noreferrer noopener">
-            <InstagramIcon className={classes.link} fontSize="large"/>
-        </a>
-        </div>
+        <SocialIcons flexDirection="row" />
       </Toolbar>
     </Appbar>
   )

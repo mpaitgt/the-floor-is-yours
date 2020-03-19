@@ -36,7 +36,7 @@ const useStyles = makeStyles(theme => ({
     padding: theme.spacing(2),
     zIndex: '-99',
     fontFamily: 'Nanum Gothic, sans-serif',
-    height: '100%'
+    // height: '100%'
   },
   list: {
     // overflowY: 'scroll'

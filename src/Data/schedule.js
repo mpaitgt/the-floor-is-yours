@@ -36,7 +36,7 @@ export const ScheduleArray = [
   {
     id: 1,
     class_type: 'Pole',
-    class_day: 'Tuesdays',
+    class_day: 'Tuesday',
     class_time: '10:00am',
     class_details: '',
     image: PoleImg
@@ -44,7 +44,7 @@ export const ScheduleArray = [
   {
     id: 2,
     class_type: 'Pole',
-    class_day: 'Saturdays',
+    class_day: 'Saturday',
     class_time: '11:00am',
     class_details: '',
     image: PoleImg
@@ -52,7 +52,7 @@ export const ScheduleArray = [
   {
     id: 3,
     class_type: 'Aerial Silks',
-    class_day: 'Wednesdays',
+    class_day: 'Wednesday',
     class_time: '6:00pm',
     class_details: 'Every 2nd & 4rd week of the month',
     image: Stock
@@ -68,7 +68,7 @@ export const ScheduleArray = [
   {
     id: 5,
     class_type: 'Aerial Silks',
-    class_day: 'Sundays',
+    class_day: 'Sunday',
     class_time: '3:00pm',
     class_details: 'Every 2nd & 4rd week of the month',
     image: Stock
@@ -76,7 +76,7 @@ export const ScheduleArray = [
   {
     id: 6,
     class_type: 'Aerial Silks',
-    class_day: 'Sundays',
+    class_day: 'Sunday',
     class_time: '4:00pm',
     class_details: 'Every 2nd & 4rd week of the month',
     image: Stock
@@ -84,7 +84,7 @@ export const ScheduleArray = [
   {
     id: 7,
     class_type: 'Salsa',
-    class_day: 'Fridays',
+    class_day: 'Friday',
     class_time: '9:00pm',
     class_details: '',
     image: SalsaImg
@@ -92,7 +92,7 @@ export const ScheduleArray = [
   {
     id: 8,
     class_type: 'Yoga',
-    class_day: 'Mondays',
+    class_day: 'Monday',
     class_time: '6:00pm',
     class_details: '',
     image: YogaImg
@@ -100,7 +100,7 @@ export const ScheduleArray = [
   {
     id: 9,
     class_type: 'Yoga',
-    class_day: 'Thursdays',
+    class_day: 'Thursday',
     class_time: '6:00pm',
     class_details: '',
     image: YogaImg
@@ -108,7 +108,7 @@ export const ScheduleArray = [
   {
     id: 10,
     class_type: 'Yoga',
-    class_day: 'Saturdays',
+    class_day: 'Saturday',
     class_time: '9:00am',
     class_details: '',
     image: YogaImg
@@ -116,7 +116,7 @@ export const ScheduleArray = [
   {
     id: 11,
     class_type: 'Hip Hop / Street',
-    class_day: 'Mondays',
+    class_day: 'Monday',
     class_time: '7:15pm',
     class_details: '',
     image: HipHopImg
@@ -124,7 +124,7 @@ export const ScheduleArray = [
   {
     id: 12,
     class_type: 'Hip Hop / Street',
-    class_day: 'Fridays',
+    class_day: 'Friday',
     class_time: '7:00pm',
     class_details: '',
     image: HipHopImg

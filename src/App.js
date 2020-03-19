@@ -4,6 +4,7 @@ import Navbar from './Components/Navbar/Navbar';
 import Home from './Components/Home/Home';
 import About from './Components/About/About';
 import Schedule from './Components/Schedule/Schedule';
+import Classes from './Components/Classes/Classes';
 import Contact from './Components/Contact/Contact';
 import Footer from './Components/Footer/Footer';
 import {ScheduleProvider} from './Components/Providers/ScheduleProvider';
@@ -17,6 +18,7 @@ function App() {
         <Switch>
           <Route exact path="/about" component={About} />
           <Route exact path="/schedule" component={Schedule} />
+          <Route exact path="/classes" component={Classes} />
           <Route exact path="/contact" component={Contact} />
           <Route exact path="/" component={Home} />
         </Switch>

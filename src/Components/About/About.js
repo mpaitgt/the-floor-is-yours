@@ -39,29 +39,28 @@ function About() {
     <Grow in={checked}>
       <Container className={classes.root}>
         <Grid container justify="center" alignItems="center" direction="row">
-          <Grid item md={5} sm={12} xs={12}>
-            <img src={Image} height="340" className={classes.image} alt="people dancing"/>
+          <Grid item md={4} sm={12} xs={12}>
+            <img src={Image} height="300" className={classes.image} alt="people dancing"/>
           </Grid>
-          <Grid item md={7} sm={12} xs={12}>
+          <Grid item md={8} sm={12} xs={12}>
             <Box className={classes.about}>
-            <Header>About</Header>
+            <Header>About Us</Header>
             <Typography variant="body1" className={classes.paragraph}>
-              Our goal at The Floor Is Yours Dance Center is to help our students boost their confidence, get in shape, have fun, meet new people and be the life of every party!
+              Are you looking for a dance studio with a friendly, fun and supportive atmosphere? Are you ready to get in shape and boost your confidence? Do you want to be the life of every party, and truly feel like you own the dance floor?
             </Typography>
             <Typography variant="body1" className={classes.paragraph}>
-              We have done this by creating a safe and fun enviroment for our students, and introducing them to some of the most talented teachers in the state.
+              The Floor Is Yours Dance Center is a professional dance studio right in the heart of downtown Somerville, NJ. Our goal was to provide a safe and supportive, yet fun and exciting, environment for women of all walks of life who have a love of dance.
             </Typography>
             <Typography variant="body1" className={classes.paragraph}>
-              Our studio is located right in the heart of downtown Somerville, NJ, where you can check out our local stores on Division Street, grab a coffee at our local coffee shops or enjoy a night out with your girlfriends at some of the best restaurants and breweries we have to offer!
+              Our instructors are some of the most talented in the state, and are here to share their passion, and help you achieve your goals through dance. Whether it be to get fit, meet new people, start a new hobby or simply have fun - they’re here to help you every step of the way.
             </Typography>
             <Typography variant="body1" className={classes.paragraph}>
-              Your first class will always be on us. Stop in a little early or stay afterward so you can meet your instructor and tell us a bit about yourself.
+              As well as dance lessons, we’re also the perfect choice for private and bachelorette parties. The studio is perfectly placed next to the best stores, coffee shops, restaurants and bars NJ has to offer. So you and the girls can enjoy a fun lesson, and then head straight out to enjoy the rest of your day and evening.
             </Typography>
             <Typography variant="body1" className={classes.paragraph}>
-              We are excited to have you join us at The Floor is Yours Dance Center! 
-            </Typography>
-            <Typography variant="body1" className={classes.paragraph}>
-              See you soon !
+              We’re so convinced you’ll love The Floor Is Yours, that your first class is always on us. Feel
+              free to come earlier, so stay behind to meet our instructors and the other dance students.
+              We are excited to have you join us at The Floor Is Yours
             </Typography>
             </Box>
           </Grid>
