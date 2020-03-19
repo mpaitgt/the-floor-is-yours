@@ -38,6 +38,11 @@ export default function Footer() {
           <p className={classes.content}>2 Division Street, Suite 5</p>
           <p className={classes.content}>Somerville, NJ, 08876</p>
           <p className={classes.content}>
+            <a href="tel:+1-732-400-5009" style={{color: 'inherit'}}>
+            (732) 400-5009
+            </a>
+          </p>
+          <p className={classes.content}>
             <a href="mailto:letsdance@thefloorisyoursdancecenter.com" className={classes.email}>letsdance@thefloorisyoursdancecenter.com</a>
           </p>
         </Grid>
