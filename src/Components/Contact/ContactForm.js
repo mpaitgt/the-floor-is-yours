@@ -48,28 +48,34 @@ export default function ContactForm({ sent, setSent }) {
   const [email, setEmail] = useState('');
   const [style, setStyle] = useState('');
   const [message, setMessage] = useState('');
+  const [error, setError] = useState(false);
   const classes = useStyles();
 
   const handleSubmit = e => {
     e.preventDefault();
-    let templateParams = {
-      name: name,
-      email: email,
-      style: style,
-      message: message
-    };
-    emailjs.send(
-      'gmail',
-      'the_floor_is_yours',
-      templateParams,
-      'user_hj9lyTMwrU1mbY0EF1xh0'
-     )
-     .then(res => {
-       console.log('SUCCESS!', res.status, res.text);
-       setSent(true);
-       clearForm();
-     })
-     .catch(err => console.log('FAILED...', err));
+    if (!name || !email || !style || !message) {
+      setError(true);
+    } else {
+      setError(false);
+      let templateParams = {
+        name: name,
+        email: email,
+        style: style,
+        message: message
+      };
+      emailjs.send(
+        'gmail',
+        'the_floor_is_yours',
+        templateParams,
+        'user_hj9lyTMwrU1mbY0EF1xh0'
+      )
+      .then(res => {
+        console.log('SUCCESS!', res.status, res.text);
+        setSent(true);
+        clearForm();
+      })
+      .catch(err => console.log('FAILED...', err));
+    }
   }
 
   const clearForm = () => {
@@ -82,6 +88,16 @@ export default function ContactForm({ sent, setSent }) {
   return (
     <Paper className={classes.card} >
       <Typography variant="headline">Get in touch!</Typography>
+      {
+        error
+        ?
+        <Typography variant="headline" style={{ display: 'block', margin: '10px 0px', color: 'red' }}>
+          Please fill in the form completely
+        </Typography>
+        :
+        null
+      }
+      
       {!sent
       ?
       <form onSubmit={event => handleSubmit(event)}>
@@ -119,7 +135,6 @@ export default function ContactForm({ sent, setSent }) {
         <TextField 
         id="outlined-multiline-static" 
         rows="10" 
-        // label="Message" 
         label="Message"
         name="message"
         variant="outlined"
