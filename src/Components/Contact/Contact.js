@@ -1,9 +1,9 @@
 import React, {useState, useEffect, Fragment} from 'react';
 import Grow from '@material-ui/core/Grow';
 import Header from '../Header';
-import * as emailjs from 'emailjs-com';
+import ContactForm from './ContactForm';
 import Map from '../../Images/somerville-map-the-floor-is-yours.jpg';
-import {TextField, Paper, Container, makeStyles, Typography, Button, Grid} from '@material-ui/core';
+import {Container, makeStyles, Grid} from '@material-ui/core';
 
 const useStyles = makeStyles(theme => ({
   flex: {
@@ -13,11 +13,15 @@ const useStyles = makeStyles(theme => ({
     justifyContent: 'center'
   },
   card: {
-    width: '400px',
     padding: theme.spacing(5),
     margin: '0 auto',
     background: 'linear-gradient(30deg, #a9b0c0, #f2f2f2);',
-    fontFamily: 'Nanum Gothic, sans-serif'
+    fontFamily: 'Nanum Gothic, sans-serif',
+    width: '400px',
+    [theme.breakpoints.down('xs')]: {
+      width: '100%',
+      margin: '0'
+    }
   },
   input: {
     display: 'block',
@@ -30,51 +34,26 @@ const useStyles = makeStyles(theme => ({
     fontFamily: 'Nanum Gothic, sans-serif'
   },
   image: {
-    border: '1px solid white'
+    border: '1px solid white',
+    [theme.breakpoints.down('md')]: {
+      marginTop: theme.spacing(4)
+    },
+    width: '550px',
+    [theme.breakpoints.down('xs')]: {
+      width: '100%',
+    }
   }
 }))
 
 export default function Contact() {
   const [checked, setChecked] = useState(false);
-  const [name, setName] = useState('');
-  const [email, setEmail] = useState('');
-  const [style, setStyle] = useState('');
-  const [message, setMessage] = useState('');
   const [sent, setSent] = useState(false);
   const classes = useStyles();
 
   useEffect(() => {
-    setChecked(prev => !prev)
+    setChecked(prev => !prev);
+    setSent(false);
   }, [])
-
-  const handleSubmit = e => {
-    e.preventDefault();
-    let templateParams = {
-      name: name,
-      email: email,
-      style: style,
-      message: message
-    };
-    emailjs.send(
-      'gmail',
-      'the_floor_is_yours',
-      templateParams,
-      'user_hj9lyTMwrU1mbY0EF1xh0'
-     )
-     .then(res => {
-       console.log('SUCCESS!', res.status, res.text);
-       setSent(true);
-       clearForm();
-     })
-     .catch(err => console.log('FAILED...', err));
-  }
-
-  const clearForm = () => {
-    setName('');
-    setEmail('');
-    setStyle('');
-    setMessage('');
-  }
 
   return (
     <Grow in={checked}>
@@ -84,59 +63,11 @@ export default function Contact() {
           <Header>Contact</Header>
           <Fragment>
             <Grid container className={classes.flex}>
-              <Grid item md={6}>
-                <Paper className={classes.card} >
-                  <Typography variant="headline">Get in touch!</Typography>
-                  <form style={{ margin: '0 auto', width: 'auto' }} onSubmit={event => handleSubmit(event)}>
-                    <TextField 
-                    onChange={e => setName(e.target.value)} 
-                    value={name} 
-                    color="inherit" 
-                    id="standard-basic" 
-                    name="name" 
-                    label="Name" 
-                    className={classes.input} 
-                    fullWidth/>
-
-                    <TextField 
-                    onChange={e => setEmail(e.target.value)} 
-                    value={email} 
-                    color="inherit" 
-                    id="standard-basic" 
-                    name="email" 
-                    label="Email" 
-                    className={classes.input} 
-                    fullWidth/>
-
-                    <TextField 
-                    onChange={e => setStyle(e.target.value)} 
-                    value={style} 
-                    color="inherit" 
-                    id="standard-basic" 
-                    name="style" 
-                    label="Which style of dance are you most interested in?" 
-                    className={classes.input} 
-                    fullWidth/>
-
-                    <TextField 
-                    id="outlined-multiline-static" 
-                    rows="10" 
-                    // label="Message" 
-                    label="Message"
-                    name="message"
-                    variant="outlined"
-                    className={classes.input}
-                    onChange={e => setMessage(e.target.value)}
-                    value={message}
-                    multiline
-                    fullWidth/>
-
-                    <Button type="submit" className={classes.button} variant="outlined">Submit</Button>
-                  </form>
-                </Paper>
+              <Grid item lg={6} md={12} sm={12}>
+                <ContactForm setSent={setSent} sent={sent} />
               </Grid>
-              <Grid item md={6}>
-                <img src={Map} width="550px" alt="The Floor is Yours Dance Center" className={classes.image} />
+              <Grid item lg={6} md={12} sm={12} style={{textAlign: 'center'}}>
+                <img src={Map} alt="The Floor is Yours Dance Center" className={classes.image} />
               </Grid>
             </Grid>
           </Fragment>
