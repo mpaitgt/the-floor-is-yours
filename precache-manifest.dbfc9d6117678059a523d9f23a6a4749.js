@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "7203a904c3329a6e4a2e3ffd561c429c",
+    "revision": "0f9c4f701fbe7681b2b63212df607eaa",
     "url": "/index.html"
   },
   {
-    "revision": "bf8163a6bf7bdb0b2ba9",
-    "url": "/static/css/main.d0e0010c.chunk.css"
+    "revision": "9726a9778d2fa6727c61",
+    "url": "/static/css/main.15f6983a.chunk.css"
   },
   {
-    "revision": "b6e98c707e9bfbfd2ac4",
-    "url": "/static/js/2.755e8686.chunk.js"
+    "revision": "94a492a931377dfbe20b",
+    "url": "/static/js/2.500a62c1.chunk.js"
   },
   {
     "revision": "3adc01bea76e7956dc3633ee898f6936",
-    "url": "/static/js/2.755e8686.chunk.js.LICENSE.txt"
+    "url": "/static/js/2.500a62c1.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "bf8163a6bf7bdb0b2ba9",
-    "url": "/static/js/main.782d1806.chunk.js"
+    "revision": "9726a9778d2fa6727c61",
+    "url": "/static/js/main.8f9c71ae.chunk.js"
   },
   {
     "revision": "ea77b83a3e5ee0522d3b",
@@ -30,6 +30,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "f027d73e41e42b79b3866d0076a2e586",
     "url": "/static/media/hip-hop-image-1500.f027d73e.png"
+  },
+  {
+    "revision": "56559a9fa2c99bcb5d676e0ab5a9a61b",
+    "url": "/static/media/logo-2-with-tagline.56559a9f.png"
   },
   {
     "revision": "3b7abe4938b3f4b757c6543dc290ca68",
@@ -46,6 +50,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "4208d8782298da760a058cde0e064e3a",
     "url": "/static/media/silks-image-1500.4208d878.png"
+  },
+  {
+    "revision": "7d4b2f73c91394d5da121b6835b5b4ec",
+    "url": "/static/media/somerville-map-the-floor-is-yours.7d4b2f73.jpg"
   },
   {
     "revision": "614b4e782332f0f9f097e0d8cbf27a19",

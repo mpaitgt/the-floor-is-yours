@@ -1,29 +1,31 @@
 {
   "files": {
-    "main.css": "/static/css/main.d0e0010c.chunk.css",
-    "main.js": "/static/js/main.782d1806.chunk.js",
-    "main.js.map": "/static/js/main.782d1806.chunk.js.map",
+    "main.css": "/static/css/main.15f6983a.chunk.css",
+    "main.js": "/static/js/main.8f9c71ae.chunk.js",
+    "main.js.map": "/static/js/main.8f9c71ae.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.8041961b.js",
     "runtime-main.js.map": "/static/js/runtime-main.8041961b.js.map",
-    "static/js/2.755e8686.chunk.js": "/static/js/2.755e8686.chunk.js",
-    "static/js/2.755e8686.chunk.js.map": "/static/js/2.755e8686.chunk.js.map",
+    "static/js/2.500a62c1.chunk.js": "/static/js/2.500a62c1.chunk.js",
+    "static/js/2.500a62c1.chunk.js.map": "/static/js/2.500a62c1.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.804b2d786dd8a6b8e3ac606fa03ab323.js": "/precache-manifest.804b2d786dd8a6b8e3ac606fa03ab323.js",
+    "precache-manifest.dbfc9d6117678059a523d9f23a6a4749.js": "/precache-manifest.dbfc9d6117678059a523d9f23a6a4749.js",
     "service-worker.js": "/service-worker.js",
-    "static/css/main.d0e0010c.chunk.css.map": "/static/css/main.d0e0010c.chunk.css.map",
-    "static/js/2.755e8686.chunk.js.LICENSE.txt": "/static/js/2.755e8686.chunk.js.LICENSE.txt",
-    "static/media/index.css": "/static/media/cover-image-1500.f0777fc3.png",
+    "static/css/main.15f6983a.chunk.css.map": "/static/css/main.15f6983a.chunk.css.map",
+    "static/js/2.500a62c1.chunk.js.LICENSE.txt": "/static/js/2.500a62c1.chunk.js.LICENSE.txt",
+    "static/media/cover-image-1500.png": "/static/media/cover-image-1500.f0777fc3.png",
     "static/media/hip-hop-image-1500.png": "/static/media/hip-hop-image-1500.f027d73e.png",
+    "static/media/logo-2-with-tagline.png": "/static/media/logo-2-with-tagline.56559a9f.png",
     "static/media/logo-2.png": "/static/media/logo-2.3b7abe49.png",
     "static/media/pole-image-1500.png": "/static/media/pole-image-1500.a7bb5ab2.png",
     "static/media/salsa-image-1500.png": "/static/media/salsa-image-1500.2f8d8830.png",
     "static/media/silks-image-1500.png": "/static/media/silks-image-1500.4208d878.png",
+    "static/media/somerville-map-the-floor-is-yours.jpg": "/static/media/somerville-map-the-floor-is-yours.7d4b2f73.jpg",
     "static/media/yoga-image-1500.png": "/static/media/yoga-image-1500.614b4e78.png"
   },
   "entrypoints": [
     "static/js/runtime-main.8041961b.js",
-    "static/js/2.755e8686.chunk.js",
-    "static/css/main.d0e0010c.chunk.css",
-    "static/js/main.782d1806.chunk.js"
+    "static/js/2.500a62c1.chunk.js",
+    "static/css/main.15f6983a.chunk.css",
+    "static/js/main.8f9c71ae.chunk.js"
   ]
 }
