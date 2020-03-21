@@ -2,12 +2,13 @@ import React, {useState, useEffect, useContext} from 'react';
 import Header from '../Header';
 import {makeStyles} from '@material-ui/core/styles';
 import Grow from '@material-ui/core/Grow';
-import {Container, Grid, Typography} from '@material-ui/core';
-import ClassCard from './ClassCard';
-import ScheduleTable from './Table';
+import {Container, Grid, Typography, Box} from '@material-ui/core';
 import {ScheduleContext} from '../Providers/ScheduleProvider';
 
 const useStyles = makeStyles(theme => ({
+  schedule: {
+    marginTop: '100px'
+  },
   class: {
     maxWidth: '500px',
     margin: '0 auto',
@@ -37,18 +38,6 @@ function Schedule() {
   useEffect(() => {
     setChecked(prev => !prev)
   }, [])
-
-  // const classesByType = () => {
-  //   return Object.entries(
-  //     schedule.reduce((classType, classes) => {
-  //       const { class_type } = classes;
-  //       classType[class_type] = classType[class_type] 
-  //       ? [...classType[class_type], classes]
-  //       : [classes]
-  //       return classType
-  //     }, {})
-  //   )
-  // }
 
   const classesByDay = () => {
     return Object.entries(
@@ -85,26 +74,30 @@ function Schedule() {
 
   return ( 
     <Grow in={checked}>
-      <Container className={classes.root}>
-        <Header>
-          Schedule
-          <span style={{ fontSize: '18px', marginLeft: '4em' }}>Click to view class times</span>
-        </Header>
-        <Grid container>
-          <Grid item md={3} />
-          <Grid item md={6} sm={12} xs={12}>
-          <ul>
-          {sortDays().map(classItem => {
-            return (
-              <div>
-                <h1 style={{ paddingTop: '20px' }}>{classItem[0]}</h1>
-                <ScheduleTable classItems={classItem[1]}/>
-              </div>
-            )
-          })}
-          </ul>
+      <Container>
+        <Box>
+          <Header className={classes.schedule}>
+            Schedule  
+          </Header>
+          <Grid container>
+            <Grid item md={3} />
+            <Grid item md={6} sm={12} xs={12}>
+            {/* <ul>
+            {sortDays().map(classItem => {
+              return (
+                <div>
+                  <h1 style={{ paddingTop: '20px' }}>{classItem[0]}</h1>
+                  <ScheduleTable classItems={classItem[1]}/>
+                </div>
+              )
+            })}
+            </ul> */}
+            <Typography clasName={classes.paragraph}>
+              Class schedules TBD
+            </Typography>
+            </Grid>
           </Grid>
-        </Grid>
+        </Box>
       </Container>
     </Grow>
   )

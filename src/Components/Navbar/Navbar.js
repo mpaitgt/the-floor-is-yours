@@ -1,11 +1,16 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+import React, {useState} from 'react';
+import {Link} from 'react-router-dom';
 import Appbar from '@material-ui/core/AppBar';
-import { makeStyles, Toolbar, IconButton, Button, Typography } from '@material-ui/core';
-// import MenuIcon from '@material-ui/icons/Menu';
 import SocialIcons from '../SocialIcons/SocialIcons';
-import FacebookIcon from '@material-ui/icons/Facebook';
-import InstagramIcon from '@material-ui/icons/Instagram';
+import MenuIcon from '@material-ui/icons/MenuRounded';
+import {
+  makeStyles, 
+  Toolbar, 
+  IconButton, 
+  Button, 
+  Drawer, 
+  Container
+} from '@material-ui/core';
 
 const useStyles = makeStyles(theme => ({
   root: {
@@ -13,7 +18,8 @@ const useStyles = makeStyles(theme => ({
     flexGrow: 1,
     boxShadow: 'none',
     marginBottom: theme.spacing(8),
-    width: '100%'
+    width: '100%',
+    // position: 'sticky'
   },
   menuButton: {
     marginRight: theme.spacing(2),
@@ -23,49 +29,69 @@ const useStyles = makeStyles(theme => ({
     fontFamily: 'inherit'
   },
   link: {
-    color: "white",
-    margin: "0px 20px",
-    fontFamily: 'inherit'
+    textDecoration: 'none',
+    textAlign: 'center',
+    padding: '10px 0px',
+    background: "var(--maroon)"
+  },
+  btn: {
+    fontSize: '20px',
+    fontFamily: 'inherit',
+    fontWeight: 'bold',
+    color: "var(--lightblue)",
+    margin: theme.spacing(2)
   }
 }));
 
 function Navbar() {
+  const [menu, setMenu] = useState(false);
   const classes = useStyles();
 
+  const toggleDrawer = (bool) => {
+    !menu ? setMenu(bool) : setMenu(bool);
+  }
+
   return (
-    <Appbar className={classes.root} position="relative">
-      <Toolbar>
-        {/* <IconButton edge="start" className={classes.menuButton} color="inherit" aria-label="menu">
-          <MenuIcon />
-        </IconButton> */}
-        <Link to="/" style={{ textDecoration: 'none' }}>
-          <Button className={classes.link}>
-          Home
-          </Button>
-        </Link>
-        <Link to="/about" style={{ textDecoration: 'none' }}>
-            <Button className={classes.link}>
-              About Us
-            </Button>
-        </Link>
-        <Link to="/classes" style={{ textDecoration: 'none' }}>
-            <Button className={classes.link}>
-              Classes
-            </Button>
-        </Link>
-        <Link to="/schedule" style={{ textDecoration: 'none' }}>
-            <Button className={classes.link}>
-              Schedule
-            </Button>
-        </Link>
-        <Link to="/contact" style={{ textDecoration: 'none' }}>
-            <Button className={classes.link}>
-              Contact
-            </Button>
-        </Link>
-        <SocialIcons flexDirection="row" />
-      </Toolbar>
-    </Appbar>
+    <Container>
+      <Appbar className={classes.root} position="relative">
+        <Toolbar style={{ display: 'flex', flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between' }}>
+          <IconButton onClick={() => toggleDrawer(true)} edge="start" className={classes.menuButton} color="inherit" aria-label="menu">
+            <MenuIcon />
+          </IconButton>
+
+          <Drawer anchor="bottom" open={menu} onClick={() => toggleDrawer(false)}>
+            <Link to="/" className={classes.link}>
+              <Button className={classes.btn}>
+              Home
+              </Button>
+            </Link>
+            <Link to="/about" className={classes.link}>
+                <Button className={classes.btn}>
+                  About Us
+                </Button>
+            </Link>
+            <Link to="/classes" className={classes.link}>
+                <Button className={classes.btn}>
+                  Classes
+                </Button>
+            </Link>
+            <Link to="/schedule" className={classes.link} style={{ display: 'none' }}>
+                <Button className={classes.btn}>
+                  Schedule
+                </Button>
+            </Link>
+            <Link to="/contact" className={classes.link}>
+                <Button className={classes.btn}>
+                  Contact
+                </Button>
+            </Link>
+          </Drawer>
+          <div>
+            <SocialIcons flexDirection="row" />
+          </div>
+        </Toolbar>
+      </Appbar>
+    </Container>
   )
 }
 

@@ -14,15 +14,15 @@ function App() {
   return (
     <Router basename="/">
       <ScheduleProvider>
-      <Navbar />
-        <Switch>
-          <Route exact path="/about" component={About} />
-          <Route exact path="/schedule" component={Schedule} />
-          <Route exact path="/classes" component={Classes} />
-          <Route exact path="/contact" component={Contact} />
-          <Route exact path="/" component={Home} />
-        </Switch>
-      <Footer />
+        <Navbar />
+          <Switch>
+            <Route exact path="/about" component={About} />
+            <Route exact path="/schedule" component={Schedule} />
+            <Route exact path="/classes" component={Classes} />
+            <Route exact path="/contact" component={Contact} />
+            <Route exact path="/" component={Home} />
+          </Switch>
+        <Footer />
       </ScheduleProvider>
     </Router>
   )

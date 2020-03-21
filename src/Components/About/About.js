@@ -11,15 +11,18 @@ const useStyles = makeStyles(theme => ({
     flexDirection: 'column',
     alignItems: 'center',
     justifyContent: 'center',
-    maxWidth: '1000px'
+    maxWidth: '1000px',
   },
   about: {
     padding: theme.spacing(2),
   },
   paragraph: {
     marginTop: theme.spacing(3),
+    fontFamily: 'inherit',
     fontSize: '16px',
-    fontFamily: 'inherit'
+    [theme.breakpoints.down('sm')]: {
+      fontSize: '14px',
+    },
   },
   image: {
     borderRadius: '50%',
@@ -39,9 +42,9 @@ function About() {
     <Grow in={checked}>
       <Container className={classes.root}>
         <Grid container justify="center" alignItems="center" direction="row">
-          <Grid item md={4} sm={12} xs={12}>
+          {/* <Grid item md={4} sm={12} xs={12}>
             <img src={Image} height="300" className={classes.image} alt="people dancing"/>
-          </Grid>
+          </Grid> */}
           <Grid item md={8} sm={12} xs={12}>
             <Box className={classes.about}>
             <Header>About Us</Header>
@@ -60,7 +63,7 @@ function About() {
             <Typography variant="body1" className={classes.paragraph}>
               We’re so convinced you’ll love The Floor Is Yours, that your first class is always on us. Feel
               free to come earlier, so stay behind to meet our instructors and the other dance students.
-              We are excited to have you join us at The Floor Is Yours
+              We are excited to have you join us at The Floor Is Yours!
             </Typography>
             </Box>
           </Grid>
