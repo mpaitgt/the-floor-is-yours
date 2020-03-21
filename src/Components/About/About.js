@@ -1,7 +1,6 @@
 import React, {useState, useEffect} from 'react';
 import {makeStyles} from '@material-ui/core/styles';
 import {Container, Grid, Box, Typography} from '@material-ui/core';
-import Image from '../../Images/cover-image-1500.png';
 import Header from '../Header';
 import Grow from '@material-ui/core/Grow';
 

@@ -87,68 +87,67 @@ export default function ContactForm({ sent, setSent }) {
 
   return (
     <Paper className={classes.card} >
-      <Typography variant="headline">Get in touch!</Typography>
+      <Typography variant="h5" style={{ fontFamily: 'inherit' }}>Get in touch!</Typography>
       {
         error
         ?
-        <Typography variant="headline" style={{ display: 'block', margin: '10px 0px', color: 'red' }}>
+        <Typography variant="h6" style={{ fontFamily: 'inherit', display: 'block', margin: '10px 0px', color: 'red' }}>
           Please fill in the form completely
         </Typography>
         :
         null
       }
-      
-      {!sent
-      ?
-      <form onSubmit={event => handleSubmit(event)}>
-
-        <TextField 
-        onChange={e => setName(e.target.value)} 
-        value={name} 
-        color="inherit" 
-        id="standard-basic" 
-        name="name" 
-        label="Name" 
-        className={classes.input} 
-        fullWidth/>
-
-        <TextField 
-        onChange={e => setEmail(e.target.value)} 
-        value={email} 
-        color="inherit" 
-        id="standard-basic" 
-        name="email" 
-        label="Email" 
-        className={classes.input} 
-        fullWidth/>
-
-        <TextField 
-        onChange={e => setStyle(e.target.value)} 
-        value={style} 
-        color="inherit" 
-        id="standard-basic" 
-        name="style" 
-        label="Which style of dance are you most interested in?" 
-        className={classes.input} 
-        fullWidth/>
-
-        <TextField 
-        id="outlined-multiline-static" 
-        rows="10" 
-        label="Message"
-        name="message"
-        variant="outlined"
-        className={classes.input}
-        onChange={e => setMessage(e.target.value)}
-        value={message}
-        multiline
-        fullWidth/>
-
-        <Button type="submit" className={classes.button} variant="outlined">Submit</Button>
-      </form>
-      :
-      <h1>Thank you!</h1>
-    }
+      {
+        !sent
+        ?
+        <form onSubmit={event => handleSubmit(event)}>
+          <TextField 
+            onChange={e => setName(e.target.value)} 
+            value={name} 
+            color="primary" 
+            id="standard-basic" 
+            name="name" 
+            label="Name" 
+            className={classes.input} 
+            fullWidth
+          />
+          <TextField 
+            onChange={e => setEmail(e.target.value)} 
+            value={email} 
+            color="primary" 
+            id="standard-basic" 
+            name="email" 
+            label="Email" 
+            className={classes.input} 
+            fullWidth
+          />
+          <TextField 
+            onChange={e => setStyle(e.target.value)} 
+            value={style} 
+            color="primary" 
+            id="standard-basic" 
+            name="style" 
+            label="Which style of dance are you most interested in?" 
+            className={classes.input} 
+            fullWidth
+          />
+          <TextField 
+            id="outlined-multiline-static" 
+            rows="10" 
+            label="Message"
+            name="message"
+            variant="outlined"
+            className={classes.input}
+            onChange={e => setMessage(e.target.value)}
+            value={message}
+            multiline
+            fullWidth
+          />
+          <Button type="submit" className={classes.button} variant="outlined">Submit</Button>
+        </form>
+        :
+        <h1>Thank you!</h1>
+      }
     </Paper>
   )
 }

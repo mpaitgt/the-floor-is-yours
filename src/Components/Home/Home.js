@@ -69,7 +69,6 @@ function Home() {
 
   useEffect(() => {
     setChecked(prev => !prev)
-    console.log(process.env.PUBLIC_URL);
   }, [])
 
   return (

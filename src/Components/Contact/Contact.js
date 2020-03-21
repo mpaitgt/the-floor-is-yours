@@ -57,8 +57,7 @@ export default function Contact() {
 
   return (
     <Grow in={checked}>
-      
-        <Container className={classes.root}>
+      <Container className={classes.root}>
         <div className={classes.schedule}>
           <Header>Contact</Header>
           <Fragment>
@@ -71,9 +70,8 @@ export default function Contact() {
               </Grid>
             </Grid>
           </Fragment>
-          </div>
-        </Container>
-      
+        </div>
+      </Container>
     </Grow>
   )
 }
