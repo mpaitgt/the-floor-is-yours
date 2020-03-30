@@ -65,7 +65,7 @@ function Classes() {
           </div>
 
           <div className={classes.class}>
-            <h2>Aerial Skills</h2>
+            <h2>Aerial Silks</h2>
             <p className={classes.desc}>For those who love a thrill. Aerial silks is a great way to gain strength in the upper body, core and back muscles. It is physically demanding but is taught in a way which helps the students gain strength, coordination and confidence progressively in an encouraging environment.</p>
           </div>
 
@@ -120,7 +120,7 @@ function Classes() {
           </div>
 
           <div className={classes.class}>
-            <h2>Sexy Floor Dance</h2>
+            <h2>Exotic Floor Dance</h2>
             <p className={classes.desc}>Learn how to balance your up-the-pole tricks with floorwork and base of the pole moves. Sexy Floor Dance focuses on ways to travel across the floor and around the pole and give you new floor based tricks to add to routines. You can use heels for that sexier touch or just go barefoot if you prefer comfort.</p> 
           </div>
 

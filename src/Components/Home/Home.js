@@ -83,7 +83,7 @@ function Home() {
               <Header>Who are we?</Header>
             </div>
             <Typography variant="h4" align="center" className={classes.tag}>
-            We are a diverse group of women, from New Jersey and New York, with a passion for Dance. We each bring our own expertise and styles: Pole, Aerial&nbsp;Skills, Yoga, Burlesque, Zumba, Hip&nbsp;Hop, Belly&nbsp;Dance&nbsp;and&nbsp;Salsa.
+            We are a diverse group of women, from New Jersey and New York, with a passion for Dance. We each bring our own expertise and styles: Pole, Aerial&nbsp;Silks, Yoga, Burlesque, Zumba, Hip&nbsp;Hop, Belly&nbsp;Dance&nbsp;and&nbsp;Salsa.
             <br />
             <br />
             At The Floor Is Yours Dance Center, our aim is to help other women feel confident, look good and have fun through dance. Available for individual lessons, bachelorette parties, and everything in between, we’re here to share our love of dance&nbsp;with&nbsp;you. 
