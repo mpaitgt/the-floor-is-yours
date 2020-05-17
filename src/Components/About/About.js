@@ -3,6 +3,7 @@ import {makeStyles} from '@material-ui/core/styles';
 import {Container, Grid, Box, Typography} from '@material-ui/core';
 import Header from '../Header';
 import Grow from '@material-ui/core/Grow';
+import silhouettes_square from '../../Images/silhouettes_square.jpeg';
 
 const useStyles = makeStyles(theme => ({
   root: {
@@ -11,6 +12,7 @@ const useStyles = makeStyles(theme => ({
     alignItems: 'center',
     justifyContent: 'center',
     maxWidth: '1000px',
+    marginTop: theme.spacing(10)
   },
   about: {
     padding: theme.spacing(2),
@@ -34,16 +36,17 @@ function About() {
   const [checked, setChecked] = useState(false);
 
   useEffect(() => {
-    setChecked(prev => !prev)
+    setChecked(prev => !prev);
+    window.scrollTo(0, 0);
   }, [])
 
   return (
     <Grow in={checked}>
       <Container className={classes.root}>
         <Grid container justify="center" alignItems="center" direction="row">
-          {/* <Grid item md={4} sm={12} xs={12}>
-            <img src={Image} height="300" className={classes.image} alt="people dancing"/>
-          </Grid> */}
+          <Grid item md={4} sm={12} xs={12}>
+            <img src={silhouettes_square} height="300" className={classes.image} alt="people dancing"/>
+          </Grid>
           <Grid item md={8} sm={12} xs={12}>
             <Box className={classes.about}>
             <Header>About Us</Header>

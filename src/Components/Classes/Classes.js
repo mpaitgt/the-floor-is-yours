@@ -5,6 +5,9 @@ import Grow from '@material-ui/core/Grow';
 import {Container, Grid, Typography} from '@material-ui/core';
 
 const useStyles = makeStyles(theme => ({
+  root: {
+    marginTop: theme.spacing(10)
+  },
   class: {
     maxWidth: '500px',
     margin: '0 auto',
@@ -41,7 +44,8 @@ function Classes() {
   const classes = useStyles();
 
   useEffect(() => {
-    setChecked(prev => !prev)
+    setChecked(prev => !prev);
+    window.scrollTo(0, 0);
   }, [])
 
   return ( 

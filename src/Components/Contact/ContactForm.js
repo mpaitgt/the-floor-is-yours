@@ -12,7 +12,7 @@ const useStyles = makeStyles(theme => ({
   card: {
     padding: theme.spacing(5),
     margin: '0 auto',
-    background: 'linear-gradient(30deg, #a9b0c0, #f2f2f2);',
+    background: 'var(--gradient)',
     fontFamily: 'Nanum Gothic, sans-serif',
     width: '400px',
     [theme.breakpoints.down('xs')]: {

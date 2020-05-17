@@ -7,6 +7,7 @@ import SocialIcons from '../SocialIcons/SocialIcons';
 const useStyles = makeStyles(theme => ({
   root: {
     marginTop: theme.spacing(20),
+    marginBottom: theme.spacing(5),
     textAlign: 'center',
     background: '#ffffff2c',
     padding: '20px',

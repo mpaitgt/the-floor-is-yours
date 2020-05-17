@@ -5,10 +5,9 @@ import {makeStyles} from '@material-ui/core/styles';
 let useStyles = makeStyles(theme => ({
   header: {
     fontFamily: 'Permanent Marker, cursive',
-    borderBottom: '1px solid white',
-    paddingBottom: '24px',
-    marginTop: '0px',
-    marginBottom: '1em',
+    paddingTop: theme.spacing(2),
+    paddingBottom: theme.spacing(2),
+    margin: '0 auto',
     fontSize: '42px',
     [theme.breakpoints.down('md')]: {
       fontSize: '42px'
@@ -23,6 +22,6 @@ export default function Header({ children }) {
   const classes = useStyles();
 
   return (
-    <Typography variant="h1" className={classes.header}>{children}</Typography>
+    <Typography variant="h1" align="left" className={classes.header}>{children}</Typography>
   )
 }

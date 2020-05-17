@@ -6,11 +6,15 @@ import Map from '../../Images/somerville-map-the-floor-is-yours.jpg';
 import {Container, makeStyles, Grid} from '@material-ui/core';
 
 const useStyles = makeStyles(theme => ({
+  root: {
+    marginTop: theme.spacing(10)
+  },
   flex: {
     display: 'flex',
     flexDirection: 'row',
     alignItems: 'center',
-    justifyContent: 'center'
+    justifyContent: 'center',
+    marginTop: theme.spacing(2)
   },
   card: {
     padding: theme.spacing(5),
@@ -53,6 +57,7 @@ export default function Contact() {
   useEffect(() => {
     setChecked(prev => !prev);
     setSent(false);
+    window.scrollTo(0, 0);
   }, [])
 
   return (
