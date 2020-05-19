@@ -27,7 +27,7 @@ const useStyles = makeStyles(theme => ({
   },
   image: {
     borderRadius: '50%',
-    textAlign: 'center',
+    width: '100%',
   }
 }))
 
@@ -44,12 +44,12 @@ function About() {
     <Grow in={checked}>
       <Container className={classes.root}>
         <Grid container justify="center" alignItems="center" direction="row">
-          <Grid item md={4} sm={12} xs={12}>
-            <img src={silhouettes_square} height="300" className={classes.image} alt="people dancing"/>
+          <Grid item md={4} sm={6} xs={8}>
+            <img src={silhouettes_square} className={classes.image} alt="people dancing"/>
           </Grid>
           <Grid item md={8} sm={12} xs={12}>
             <Box className={classes.about}>
-            <Header>About Us</Header>
+            <Header variant="h2">About Us</Header>
             <Typography variant="body1" className={classes.paragraph}>
               Are you looking for a dance studio with a friendly, fun and supportive atmosphere? Are you ready to get in shape and boost your confidence? Do you want to be the life of every party, and truly feel like you own the dance floor?
             </Typography>

@@ -11,14 +11,10 @@ const useStyles = makeStyles(theme => ({
   },
   card: {
     padding: theme.spacing(5),
-    margin: '0 auto',
+    margin: '0px auto 20px auto',
     background: 'var(--gradient)',
     fontFamily: 'Nanum Gothic, sans-serif',
-    width: '400px',
-    [theme.breakpoints.down('xs')]: {
-      width: '100%',
-      margin: '0'
-    }
+    width: '400px'
   },
   input: {
     display: 'block',
@@ -29,16 +25,6 @@ const useStyles = makeStyles(theme => ({
     padding: '10px 20px',
     letterSpacing: '2px',
     fontFamily: 'Nanum Gothic, sans-serif'
-  },
-  image: {
-    border: '1px solid white',
-    [theme.breakpoints.down('md')]: {
-      marginTop: theme.spacing(4)
-    },
-    width: '550px',
-    [theme.breakpoints.down('xs')]: {
-      width: '100%',
-    }
   }
 }))
 

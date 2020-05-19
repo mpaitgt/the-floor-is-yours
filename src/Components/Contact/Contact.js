@@ -7,7 +7,8 @@ import {Container, makeStyles, Grid} from '@material-ui/core';
 
 const useStyles = makeStyles(theme => ({
   root: {
-    marginTop: theme.spacing(10)
+    marginTop: theme.spacing(10),
+    maxWidth: '1200px'
   },
   flex: {
     display: 'flex',
@@ -36,16 +37,6 @@ const useStyles = makeStyles(theme => ({
     padding: '10px 20px',
     letterSpacing: '2px',
     fontFamily: 'Nanum Gothic, sans-serif'
-  },
-  image: {
-    border: '1px solid white',
-    [theme.breakpoints.down('md')]: {
-      marginTop: theme.spacing(4)
-    },
-    width: '550px',
-    [theme.breakpoints.down('xs')]: {
-      width: '100%',
-    }
   }
 }))
 
@@ -64,14 +55,20 @@ export default function Contact() {
     <Grow in={checked}>
       <Container className={classes.root}>
         <div className={classes.schedule}>
-          <Header>Contact</Header>
+          <Header variant="h2">Contact</Header>
           <Fragment>
             <Grid container className={classes.flex}>
               <Grid item lg={6} md={12} sm={12}>
                 <ContactForm setSent={setSent} sent={sent} />
               </Grid>
-              <Grid item lg={6} md={12} sm={12} style={{textAlign: 'center'}}>
-                <img src={Map} alt="The Floor is Yours Dance Center" className={classes.image} />
+              <Grid item lg={6} md={12} sm={12}>
+                <iframe 
+                  style={{ width: '100%', height: '450px' }}
+                  title="Map to The Floor Is Yours" 
+                  frameborder="0" 
+                  src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJfTrCrkuVw4kR9wLsf3G7UIE&key=AIzaSyD-hTdwApWRQYmKyctDs8yoHJqRSAdUqpg" 
+                  allowfullscreen 
+                />
               </Grid>
             </Grid>
           </Fragment>
@@ -80,3 +77,4 @@ export default function Contact() {
     </Grow>
   )
 }
+

@@ -2,7 +2,6 @@ import React, {useState, useEffect} from 'react';
 import Logo from '../../Images/logo-2-with-tagline.png';
 import Grow from '@material-ui/core/Grow';
 import WhoAreWe from './WhoAreWe';
-import InstagramFeed from './InstagramFeed';
 import VirtualClasses from './VirtualClasses';
 import {makeStyles} from '@material-ui/core/styles';
 import {Grid} from '@material-ui/core';
@@ -21,11 +20,8 @@ const useStyles = makeStyles(theme => ({
       width: '800px'
     },
     [theme.breakpoints.down('sm')]: {
-      width: '600px',
-    },
-    [theme.breakpoints.down('xs')]: {
-      width: '300px',
-    },
+      width: '100%',
+    }
   }
 }));
 
@@ -45,7 +41,6 @@ function Home() {
         </Grid>
         <Grid item sm={12}>
           <WhoAreWe />
-          {/* <InstagramFeed /> */}
           <VirtualClasses />
         </Grid>
       </Grid>

@@ -7,15 +7,23 @@ import pole from '../../Images/pole.png';
 
 const useStyles = makeStyles(theme => ({
   container: {
+    display: 'flex',
     marginTop: theme.spacing(10),
-    marginBottom: theme.spacing(10)
+    marginBottom: theme.spacing(10),
+    [theme.breakpoints.down('sm')]: {
+      flexDirection: 'column-reverse'
+    }
   },
   imgItem: {
-    alignSelf: 'center'
+    alignSelf: 'center',
   },
   img: {
     width: '100%',
-    borderRadius: '60% 50% 60% 50%'
+    borderRadius: '60% 50% 60% 50%',
+    [theme.breakpoints.down('sm')]: {
+      width: '100%',
+      margin: '0 auto'
+    },
   },
   text: {
     paddingTop: theme.spacing(4),
@@ -35,7 +43,7 @@ const useStyles = makeStyles(theme => ({
     padding: theme.spacing(2),
     maxWidth: '850px',
     margin: '0 auto',
-    fontSize: '18px',
+    fontSize: '14px',
     lineHeight: '28px',
     fontFamily: 'inherit',
     [theme.breakpoints.down('xs')]: {
@@ -49,25 +57,25 @@ function VirtualClasses() {
 
   return (
     <Container>
-    <Grid container className={classes.container}>
-      <Grid item md={7} className={classes.text}>
-        <Header>Now offering virtual classes!</Header>
-        <Typography className={classes.content}>
-          Although our studio is closed to the public at this time, we're still here for you! We're offering virtual classes in everything from pole and burlesque to yoga, zumba, and barre! 
-          <br/><br/>
-          Click below to check out our complete schedule, and find out how you can still unleash your confidence. 
-          <br/><br/>
-          <Button className={classes.btn} variant="outlined">
-            <Link className={classes.link} to="/schedule">
-              View our schedule
-            </Link>
-          </Button>
-        </Typography>
+      <Grid container className={classes.container}>
+        <Grid item md={7} sm={12} className={classes.text}>
+          <Typography className={classes.content}>
+            <Header variant="h4">Now offering virtual classes!</Header>
+            Although our studio is closed to the public at this time, we're still here for you! We're offering virtual classes in everything from pole and burlesque to yoga, zumba, and barre! 
+            <br/><br/>
+            Click below to check out our complete schedule, and find out how you can still unleash your confidence. 
+            <br/><br/>
+            <Button className={classes.btn} variant="outlined">
+              <Link className={classes.link} to="/schedule">
+                View our schedule
+              </Link>
+            </Button>
+          </Typography>
+        </Grid>
+        <Grid item md={5} sm={8} className={classes.imgItem}>
+          <img className={classes.img} src={pole} alt="pole-dancer"></img>
+        </Grid>
       </Grid>
-      <Grid item md={5} className={classes.imgItem}>
-        <img className={classes.img} src={pole} alt="pole-dancer"></img>
-      </Grid>
-    </Grid>
     </Container>
   )
 }

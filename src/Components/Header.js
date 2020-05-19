@@ -7,21 +7,14 @@ let useStyles = makeStyles(theme => ({
     fontFamily: 'Permanent Marker, cursive',
     paddingTop: theme.spacing(2),
     paddingBottom: theme.spacing(2),
-    margin: '0 auto',
-    fontSize: '42px',
-    [theme.breakpoints.down('md')]: {
-      fontSize: '42px'
-    },
-    [theme.breakpoints.down('sm')]: {
-      fontSize: '32px'
-    }
+    margin: '0 auto'
   }
 }));
 
-export default function Header({ children }) {
+export default function Header({ variant, children }) {
   const classes = useStyles();
 
   return (
-    <Typography variant="h1" align="left" className={classes.header}>{children}</Typography>
+    <Typography variant={variant} align="left" className={classes.header}>{children}</Typography>
   )
 }

@@ -1,8 +1,10 @@
-import React, {useState} from 'react';
+import React, {useState, Fragment} from 'react';
 import {Link} from 'react-router-dom';
 import Appbar from '@material-ui/core/AppBar';
 import SocialIcons from '../SocialIcons/SocialIcons';
 import MenuIcon from '@material-ui/icons/MenuRounded';
+import { useTheme } from '@material-ui/core/styles';
+import useMediaQuery from '@material-ui/core/useMediaQuery';
 import {
   makeStyles, 
   Toolbar, 
@@ -39,11 +41,57 @@ const useStyles = makeStyles(theme => ({
   },
   letter: {
     border: '1px solid white',
-    color: 'white',
     marginLeft: '20px',
+    color: 'white',
     padding: '5px 20px'
   }
 }));
+
+function LetterButton() {
+  const theme = useTheme();
+  const classes = useStyles();
+  const matches = useMediaQuery(theme.breakpoints.up('sm'));
+
+  return (
+    <Fragment>
+    {
+      matches
+      ?
+      <Link to="/covid-letter">
+        <Button className={classes.letter}>
+          A Letter About Covid-19
+        </Button>
+      </Link>
+      :
+      null
+    }
+    </Fragment>
+  )
+}
+
+function LetterNav() {
+  const theme = useTheme();
+  const classes = useStyles();
+  const matches = useMediaQuery(theme.breakpoints.up('sm'));
+
+  return (
+    <Fragment>
+    {
+      !matches
+      ?
+      <Link to="/covid-letter" className={classes.link}>
+        <Button className={classes.btn}>
+          A Letter About Covid-19
+        </Button>
+      </Link>
+      :
+      null
+    }
+    </Fragment>
+  )
+}
+
+
 
 function Navbar() {
   const [menu, setMenu] = useState(false);
@@ -60,9 +108,7 @@ function Navbar() {
             <IconButton onClick={() => toggleDrawer(true)} edge="start" className={classes.menuButton} color="inherit" aria-label="menu">
               <MenuIcon />
             </IconButton>
-            <Link to="/covid-letter">
-              <Button className={classes.letter}>A Letter About Covid-19</Button>
-            </Link>
+            <LetterButton />
           </div>
 
           <Drawer className={classes.name} anchor="bottom" open={menu} onClick={() => toggleDrawer(false)}>
@@ -91,6 +137,7 @@ function Navbar() {
                   Contact
                 </Button>
             </Link>
+            <LetterNav />
           </Drawer>
           <div>
             <SocialIcons flexDirection="row" />

@@ -29,8 +29,8 @@ code {
     monospace;
 }
 
-/* #bg {
-  background-image: url('../src/Images/cover-image-1500.png');
+#bg {
+  background-image: url('../src/Images/silhouettes.png');
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;
@@ -39,9 +39,9 @@ code {
   position: fixed;
   width: 100%;
   z-index: -1;
-  opacity: 0.05;
+  opacity: 0.025;
 
-} */
+}
 /* 
 font-family: 'Kaushan Script', cursive;
 font-family: 'Bad Script', cursive;

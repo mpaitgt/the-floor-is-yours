@@ -1,8 +1,9 @@
 import React, {useState, useEffect, useContext} from 'react';
 import Header from '../Header';
+import {Link} from 'react-router-dom';
 import {makeStyles} from '@material-ui/core/styles';
 import Grow from '@material-ui/core/Grow';
-import {Container, Grid, Typography, List, ListItem, Box} from '@material-ui/core';
+import {Container, Grid, Typography, List, ListItem, Box, Button} from '@material-ui/core';
 import {ScheduleContext} from '../Providers/ScheduleProvider';
 
 const useStyles = makeStyles(theme => ({
@@ -22,6 +23,10 @@ const useStyles = makeStyles(theme => ({
     marginBottom: theme.spacing(3),
     borderRadius: '5px',
     background: '#ffffff1f'
+  },
+  link: {
+    color: 'white',
+    border: '1px solid white'
   },
   paragraph: {
     marginTop: theme.spacing(3),
@@ -57,18 +62,23 @@ function Schedule() {
   return ( 
     <Grow in={checked}>
       <Container className={classes.root}>
-        <Header>Virtual Class Schedule</Header>
+        <Header variant="h2">Virtual Class Schedule</Header>
           {classesByType().map(classItem => {
             return (
               <List>
-                <Typography variant="h4">{classItem[0]}</Typography>
+                <Header variant="h4">{classItem[0]}</Header>
                   {classItem[1].map(item => {
                     return (
-                      <ListItem divider={true} style={{width: '100%', margin: '0 auto' }}>
-                        <Box style={{width: '100%', margin: '0 auto' }} display="flex" justifyContent="space-evenly"  flexDirection="row">
-                          <Box style={{width: '33%' }} p={2}>{item.class_type}</Box>
-                          <Box style={{width: '33%' }} p={2}>{item.class_time}</Box>
-                          <Box style={{width: '33%' }} p={2}>with {item.instructor}</Box>
+                      <ListItem divider={true} style={{width: '100%', margin: '0 auto', borderBottom: '1px solid var(--lightblue)' }}>
+                        <Box style={{width: '100%', margin: '0 auto' }} display="flex" alignItems="center" justifyContent="space-evenly"  flexDirection="row" flexWrap="wrap">
+                          <Box style={{width: '25%' }} p={2}><strong>{item.class_type}</strong></Box>
+                          <Box style={{width: '25%' }} p={2}>{item.class_time}</Box>
+                          <Box style={{width: '20%' }} p={2}>with {item.instructor}</Box>
+                          <Box style={{ style: '30S%' }} p={2}>
+                            <a href="https://linktr.ee/thefloorisyoursdancecenter" target="_blank" rel="noreferrer noopener">
+                              <Button className={classes.link} variant="outlined">Go to Class</Button>
+                            </a>
+                          </Box>
                         </Box>
                       </ListItem>
                     )

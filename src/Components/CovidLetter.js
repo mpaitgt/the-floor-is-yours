@@ -17,9 +17,9 @@ const useStyles = makeStyles(theme => ({
     padding: theme.spacing(2),
   },
   headline: {
-    fontSize: '24px',
+    fontSize: '20px',
     fontWeight: '700',
-    lineHeight: '28px'
+    lineHeight: '24px'
   },
   letter: {
     marginTop: theme.spacing(3),
