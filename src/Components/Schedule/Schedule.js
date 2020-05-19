@@ -3,7 +3,7 @@ import Header from '../Header';
 import {Link} from 'react-router-dom';
 import {makeStyles} from '@material-ui/core/styles';
 import Grow from '@material-ui/core/Grow';
-import {Container, Grid, Typography, List, ListItem, Box, Button} from '@material-ui/core';
+import {Container, Grid, Typography, List, ListItem, Button} from '@material-ui/core';
 import {ScheduleContext} from '../Providers/ScheduleProvider';
 
 const useStyles = makeStyles(theme => ({
@@ -17,8 +17,8 @@ const useStyles = makeStyles(theme => ({
     border: '1px solid white',
     paddingTop: theme.spacing(2),
     paddingBottom: theme.spacing(2),
-    paddingLeft: theme.spacing(4),
-    paddingRight: theme.spacing(4),
+    // paddingLeft: theme.spacing(4),
+    // paddingRight: theme.spacing(4),
     marginTop: theme.spacing(3),
     marginBottom: theme.spacing(3),
     borderRadius: '5px',
@@ -33,6 +33,11 @@ const useStyles = makeStyles(theme => ({
     fontSize: '16px',
     fontFamily: 'inherit',
     lineHeight: '24px'
+  },
+  item: {
+    paddingTop: theme.spacing(1),
+    paddingBottom: theme.spacing(1),
+    textAlign: 'center'
   }
 }))
 
@@ -69,17 +74,17 @@ function Schedule() {
                 <Header variant="h4">{classItem[0]}</Header>
                   {classItem[1].map(item => {
                     return (
-                      <ListItem divider={true} style={{width: '100%', margin: '0 auto', borderBottom: '1px solid var(--lightblue)' }}>
-                        <Box style={{width: '100%', margin: '0 auto' }} display="flex" alignItems="center" justifyContent="space-evenly"  flexDirection="row" flexWrap="wrap">
-                          <Box style={{width: '25%' }} p={2}><strong>{item.class_type}</strong></Box>
-                          <Box style={{width: '25%' }} p={2}>{item.class_time}</Box>
-                          <Box style={{width: '20%' }} p={2}>with {item.instructor}</Box>
-                          <Box style={{ style: '30S%' }} p={2}>
+                      <ListItem divider={true} style={{ borderBottom: '1px solid var(--lightblue)' }}>
+                        <Grid container alignItems="center" justify="center">
+                          <Grid item lg={3} md={3} sm={3} xs={12} className={classes.item}><strong>{item.class_type}</strong></Grid>
+                          <Grid item lg={3} md={3} sm={3} xs={12} className={classes.item}>with {item.instructor}</Grid>
+                          <Grid item lg={3} md={3} sm={3} xs={12} className={classes.item}>{item.class_time}</Grid>
+                          <Grid item lg={3} md={3} sm={3} xs={12} className={classes.item}>
                             <a href="https://linktr.ee/thefloorisyoursdancecenter" target="_blank" rel="noreferrer noopener">
                               <Button className={classes.link} variant="outlined">Go to Class</Button>
                             </a>
-                          </Box>
-                        </Box>
+                          </Grid>
+                        </Grid>
                       </ListItem>
                     )
                   })}
