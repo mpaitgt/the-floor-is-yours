@@ -52,9 +52,9 @@ export const ScheduleArray = [
   },
   {
     id: 7,
-    class_type: 'Zumba',
+    class_type: 'Bellydance/Burlesque',
     class_day: 'Thursday',
-    class_time: '12:00 - 12:45pm',
+    class_time: '7:00 - 7:45pm',
     class_details: '',
     instructor: 'Sondre',
     image: SalsaImg
@@ -63,7 +63,7 @@ export const ScheduleArray = [
     id: 8,
     class_type: 'Yoga/Stretch',
     class_day: 'Thursday',
-    class_time: '7:00 - 7:45pm',
+    class_time: '8:15 - 9:00pm',
     class_details: '',
     instructor: 'Hannah',
     image: YogaImg
@@ -76,14 +76,5 @@ export const ScheduleArray = [
     class_details: '',
     instructor: 'Breanah',
     image: HipHopImg
-  },
-  {
-    id: 10,
-    class_type: 'Bellydance/Burlesque',
-    class_day: 'Saturday',
-    class_time: '1:00 - 1:45pm',
-    class_details: '',
-    instructor: 'Christina',
-    image: YogaImg
   }
 ];
