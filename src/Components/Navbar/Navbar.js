@@ -5,6 +5,7 @@ import SocialIcons from '../SocialIcons/SocialIcons';
 import MenuIcon from '@material-ui/icons/MenuRounded';
 import { useTheme } from '@material-ui/core/styles';
 import useMediaQuery from '@material-ui/core/useMediaQuery';
+import Waiver from '../../Images/TFIY_client-waiver.pdf';
 import {
   makeStyles, 
   Toolbar, 
@@ -57,11 +58,18 @@ function LetterButton() {
     {
       matches
       ?
-      <Link to="/covid-letter">
-        <Button className={classes.letter}>
-          A Letter About Covid-19
-        </Button>
-      </Link>
+      <Fragment>
+        <Link to="/covid-letter">
+          <Button className={classes.letter}>
+            A Letter About Covid-19
+          </Button>
+        </Link>
+        <a href={Waiver}>
+          <Button className={classes.letter} target="_blank">
+            Client Waiver
+          </Button>
+        </a>
+      </Fragment>
       :
       null
     }
@@ -79,11 +87,18 @@ function LetterNav() {
     {
       !matches
       ?
-      <Link to="/covid-letter" className={classes.link}>
-        <Button className={classes.btn}>
-          A Letter About Covid-19
-        </Button>
-      </Link>
+      <Fragment>
+        <Link to="/covid-letter" className={classes.link}>
+          <Button className={classes.btn}>
+            A Letter About Covid-19
+          </Button>
+        </Link>
+        <Link>
+          <Button className={classes.btn}>
+            Client Waiver
+          </Button>
+        </Link>
+      </Fragment>
       :
       null
     }
