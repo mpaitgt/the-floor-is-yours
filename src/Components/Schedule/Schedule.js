@@ -8,7 +8,7 @@ import {ScheduleContext} from '../Providers/ScheduleProvider';
 
 const useStyles = makeStyles(theme => ({
   root: {
-    maxWidth: '1000px',
+    maxWidth: '1200px',
     margin: '0 auto',
     marginTop: theme.spacing(10),
   },
@@ -17,8 +17,6 @@ const useStyles = makeStyles(theme => ({
     border: '1px solid white',
     paddingTop: theme.spacing(2),
     paddingBottom: theme.spacing(2),
-    // paddingLeft: theme.spacing(4),
-    // paddingRight: theme.spacing(4),
     marginTop: theme.spacing(3),
     marginBottom: theme.spacing(3),
     borderRadius: '5px',
@@ -30,9 +28,12 @@ const useStyles = makeStyles(theme => ({
   },
   paragraph: {
     marginTop: theme.spacing(3),
-    fontSize: '16px',
     fontFamily: 'inherit',
-    lineHeight: '24px'
+    lineHeight: '24px',
+    fontSize: '16px',
+    [theme.breakpoints.down('md')]: {
+      fontSize: '14px'
+    }
   },
   item: {
     paddingTop: theme.spacing(1),
@@ -67,30 +68,67 @@ function Schedule() {
   return ( 
     <Grow in={checked}>
       <Container className={classes.root}>
-        <Header variant="h2">Virtual Class Schedule</Header>
-          {classesByType().map(classItem => {
-            return (
+        <Grid container>
+          <Grid item lg={7} xs={12}>
+            <Header variant="h2">Virtual Class Schedule</Header>
+              {classesByType().map(classItem => {
+                return (
+                  <List>
+                    <Header variant="h4">{classItem[0]}</Header>
+                      {classItem[1].map(item => {
+                        return (
+                          <ListItem divider={true} style={{ borderBottom: '1px solid var(--lightblue)' }}>
+                            <Grid container alignItems="center" justify="center">
+                              <Grid item lg={3} md={3} sm={3} xs={12} className={classes.item}><strong>{item.class_type}</strong></Grid>
+                              <Grid item lg={3} md={3} sm={3} xs={12} className={classes.item}>with {item.instructor}</Grid>
+                              <Grid item lg={3} md={3} sm={3} xs={12} className={classes.item}>{item.class_time}</Grid>
+                              <Grid item lg={3} md={3} sm={3} xs={12} className={classes.item}>
+                                <a href="https://linktr.ee/thefloorisyoursdancecenter" target="_blank" rel="noreferrer noopener">
+                                  <Button className={classes.link} variant="outlined">Go to Class</Button>
+                                </a>
+                              </Grid>
+                            </Grid>
+                          </ListItem>
+                        )
+                      })}
+                  </List>
+                )
+              })}
+            </Grid>
+            <Grid item lg={1}>
+              
+            </Grid>
+            <Grid item lg={4} xs={12}>
+              <div style={{marginTop: '6rem'}}>
+              <Header variant="h4">
+                FREE Outdoor Classes
+              </Header>
+              <Typography variant="body1" className={classes.paragraph}>
+              Saturdays in July, we are offering <strong>free</strong> outdoor classes in Carol Pager Park located in Somerville, NJ. All ages welcome, open to the our community!
+              </Typography>
               <List>
-                <Header variant="h4">{classItem[0]}</Header>
-                  {classItem[1].map(item => {
-                    return (
-                      <ListItem divider={true} style={{ borderBottom: '1px solid var(--lightblue)' }}>
-                        <Grid container alignItems="center" justify="center">
-                          <Grid item lg={3} md={3} sm={3} xs={12} className={classes.item}><strong>{item.class_type}</strong></Grid>
-                          <Grid item lg={3} md={3} sm={3} xs={12} className={classes.item}>with {item.instructor}</Grid>
-                          <Grid item lg={3} md={3} sm={3} xs={12} className={classes.item}>{item.class_time}</Grid>
-                          <Grid item lg={3} md={3} sm={3} xs={12} className={classes.item}>
-                            <a href="https://linktr.ee/thefloorisyoursdancecenter" target="_blank" rel="noreferrer noopener">
-                              <Button className={classes.link} variant="outlined">Go to Class</Button>
-                            </a>
-                          </Grid>
-                        </Grid>
-                      </ListItem>
-                    )
-                  })}
+                <ListItem className={classes.item} divider={false} style={{fontSize: '20px'}}>
+                  <Grid container>
+                    <Grid item lg={6} md={6} sm={6} xs={6} className={classes.item}><strong>Pilates</strong></Grid>
+                    <Grid item lg={6} md={6} sm={6} xs={6} className={classes.item}>8:00am</Grid>
+                  </Grid>
+                </ListItem>
+                <ListItem className={classes.item} divider={false} style={{fontSize: '20px'}}>
+                  <Grid container>
+                    <Grid item lg={6} md={6} sm={6} xs={6} className={classes.item}><strong>Zumba</strong></Grid>
+                    <Grid item lg={6} md={6} sm={6} xs={6} className={classes.item}>9:00am</Grid>
+                  </Grid>
+                </ListItem>
+                <ListItem className={classes.item} divider={false} style={{fontSize: '20px'}}>
+                  <Grid container>
+                    <Grid item lg={6} md={6} sm={6} xs={6} className={classes.item}><strong>Yoga</strong></Grid>
+                    <Grid item lg={6} md={6} sm={6} xs={6} className={classes.item}>10:00am</Grid>
+                  </Grid>
+                </ListItem>
               </List>
-            )
-          })}
+              </div>
+            </Grid>
+          </Grid>
       </Container>
     </Grow>
   )

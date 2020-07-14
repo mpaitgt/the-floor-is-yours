@@ -3,6 +3,7 @@ import Logo from '../../Images/logo-2-with-tagline.png';
 import Grow from '@material-ui/core/Grow';
 import WhoAreWe from './WhoAreWe';
 import VirtualClasses from './VirtualClasses';
+import OutdoorClasses from './OutdoorClasses';
 import {makeStyles} from '@material-ui/core/styles';
 import {Grid} from '@material-ui/core';
 
@@ -40,6 +41,7 @@ function Home() {
           <img src={Logo} alt="The Floor is Yours Dance Center" className={classes.image} />
         </Grid>
         <Grid item sm={12}>
+          <OutdoorClasses />
           <WhoAreWe />
           <VirtualClasses />
         </Grid>
