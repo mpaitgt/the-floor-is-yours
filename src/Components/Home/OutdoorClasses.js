@@ -3,7 +3,7 @@ import Header from '../Header';
 import {Link} from 'react-router-dom';
 import {Typography, Container, Button, Grid} from '@material-ui/core';
 import {makeStyles} from '@material-ui/core/styles';
-import pole from '../../Images/pole.png';
+import yoga from '../../Images/yoga.png';
 
 const useStyles = makeStyles(theme => ({
   container: {
@@ -73,7 +73,7 @@ function VirtualClasses() {
           </Typography>
         </Grid>
         <Grid item md={5} sm={8} className={classes.imgItem}>
-          <img className={classes.img} src={pole} alt="pole-dancer"></img>
+          <img className={classes.img} src={yoga} alt="yoga-upward-facing-dog"></img>
         </Grid>
       </Grid>
     </Container>
