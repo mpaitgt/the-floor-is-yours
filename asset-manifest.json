@@ -1,24 +1,23 @@
 {
   "files": {
-    "main.css": "/static/css/main.d8fc72f0.chunk.css",
-    "main.js": "/static/js/main.47c089be.chunk.js",
-    "main.js.map": "/static/js/main.47c089be.chunk.js.map",
+    "main.css": "/static/css/main.8844749a.chunk.css",
+    "main.js": "/static/js/main.ed4ca9a7.chunk.js",
+    "main.js.map": "/static/js/main.ed4ca9a7.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.8041961b.js",
     "runtime-main.js.map": "/static/js/runtime-main.8041961b.js.map",
-    "static/js/2.0c9f0ba6.chunk.js": "/static/js/2.0c9f0ba6.chunk.js",
-    "static/js/2.0c9f0ba6.chunk.js.map": "/static/js/2.0c9f0ba6.chunk.js.map",
+    "static/js/2.a87da52f.chunk.js": "/static/js/2.a87da52f.chunk.js",
+    "static/js/2.a87da52f.chunk.js.map": "/static/js/2.a87da52f.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.c40c0c9c96a1ab6219bce61a3a07f9db.js": "/precache-manifest.c40c0c9c96a1ab6219bce61a3a07f9db.js",
+    "precache-manifest.8e350247e80d0ebfc5dfd8ae7b6ed6fd.js": "/precache-manifest.8e350247e80d0ebfc5dfd8ae7b6ed6fd.js",
     "service-worker.js": "/service-worker.js",
-    "static/css/main.d8fc72f0.chunk.css.map": "/static/css/main.d8fc72f0.chunk.css.map",
-    "static/js/2.0c9f0ba6.chunk.js.LICENSE.txt": "/static/js/2.0c9f0ba6.chunk.js.LICENSE.txt",
+    "static/css/main.8844749a.chunk.css.map": "/static/css/main.8844749a.chunk.css.map",
+    "static/js/2.a87da52f.chunk.js.LICENSE.txt": "/static/js/2.a87da52f.chunk.js.LICENSE.txt",
     "static/media/TFIY_client-waiver.pdf": "/static/media/TFIY_client-waiver.af8d7836.pdf",
     "static/media/hip-hop.png": "/static/media/hip-hop.f027d73e.png",
     "static/media/logo-2-with-tagline.png": "/static/media/logo-2-with-tagline.56559a9f.png",
     "static/media/logo-2.png": "/static/media/logo-2.3b7abe49.png",
     "static/media/pole.png": "/static/media/pole.a7bb5ab2.png",
     "static/media/salsa-2.png": "/static/media/salsa-2.2f8d8830.png",
-    "static/media/index.css": "/static/media/silhouettes.f0777fc3.png",
     "static/media/silhouettes_square.jpeg": "/static/media/silhouettes_square.41100d12.jpeg",
     "static/media/silks.png": "/static/media/silks.4208d878.png",
     "static/media/somerville-map-the-floor-is-yours.jpg": "/static/media/somerville-map-the-floor-is-yours.7d4b2f73.jpg",
@@ -26,8 +25,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.8041961b.js",
-    "static/js/2.0c9f0ba6.chunk.js",
-    "static/css/main.d8fc72f0.chunk.css",
-    "static/js/main.47c089be.chunk.js"
+    "static/js/2.a87da52f.chunk.js",
+    "static/css/main.8844749a.chunk.css",
+    "static/js/main.ed4ca9a7.chunk.js"
   ]
 }
