@@ -7,7 +7,10 @@ let useStyles = makeStyles(theme => ({
     fontFamily: 'Permanent Marker, cursive',
     paddingTop: theme.spacing(2),
     paddingBottom: theme.spacing(2),
-    margin: '0 auto'
+    margin: '0 auto',
+    [theme.breakpoints.down('xs')]: {
+      fontSize: '30px'
+    },
   }
 }));
 

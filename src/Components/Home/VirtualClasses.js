@@ -3,7 +3,6 @@ import Header from '../Header';
 import {Link} from 'react-router-dom';
 import {Typography, Container, Button, Grid} from '@material-ui/core';
 import {makeStyles} from '@material-ui/core/styles';
-import pole from '../../Images/pole.png';
 
 const useStyles = makeStyles(theme => ({
   container: {
@@ -60,20 +59,20 @@ function VirtualClasses() {
       <Grid container className={classes.container}>
         <Grid item md={7} sm={12} className={classes.text}>
           <Typography className={classes.content}>
-            <Header variant="h4">Now offering virtual classes!</Header>
-            Although our studio is closed to the public at this time, we're still here for you! We're offering virtual classes in everything from pole and burlesque to yoga, zumba, and barre! 
+            <Header variant="h4">Learn about our classes</Header>
+            We offer a wide variety of classes in everything from pole and burlesque to yoga, zumba, and barre! 
             <br/><br/>
-            Click below to check out our complete schedule, and find out how you can still unleash your confidence. 
+            Click below to read about the classes we have to offer, meet the instructors and find out how you can still unleash your confidence. 
             <br/><br/>
             <Button className={classes.btn} variant="outlined">
-              <Link className={classes.link} to="/schedule">
-                View our schedule
+              <Link className={classes.link} to="/classes">
+                Meet our instructors
               </Link>
             </Button>
           </Typography>
         </Grid>
         <Grid item md={5} sm={8} className={classes.imgItem}>
-          <img className={classes.img} src={pole} alt="pole-dancer"></img>
+          <img className={classes.img} src="https://res.cloudinary.com/tfiy/image/upload/v1606945617/the-floor-is-yours/home-page/9N7A8000_acj4fp.jpg" alt="pole-dancer"></img>
         </Grid>
       </Grid>
     </Container>

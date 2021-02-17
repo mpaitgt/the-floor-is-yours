@@ -51,7 +51,7 @@ function CovidLetter() {
           <Grid container justify="center" alignItems="center" direction="row">
             <Grid item md={8} sm={12} xs={12}>
               <Box className={classes.about}>
-              <Header>A letter about Covid-19</Header>
+              <Header variant="h2">A letter about Covid-19</Header>
               <Typography variant="caption" className={classes.headline}>
                 The Floor Is Yours Dance Center commits to member and community safety as we set the standard to re-open our dance studio in the months to come.
               </Typography>
@@ -86,7 +86,7 @@ function CovidLetter() {
               <br/><br/>
               Founder and CEO 
               <br/><br/>
-              May 5 , 2020
+              May 5, 2020
               </Typography>
               </Box>
             </Grid>

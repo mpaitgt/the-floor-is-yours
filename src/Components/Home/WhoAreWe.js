@@ -3,7 +3,6 @@ import Header from '../Header';
 import {Link} from 'react-router-dom';
 import {Typography, Container, Grid, Button} from '@material-ui/core';
 import {makeStyles} from '@material-ui/core/styles';
-import silks from '../../Images/silks.png';
 
 const useStyles = makeStyles(theme => ({
   container: {
@@ -54,7 +53,7 @@ function WhoAreWe() {
     <Container>
     <Grid container className={classes.container}>
       <Grid item md={5} sm={8} className={classes.imgItem}>
-        <img className={classes.img} src={silks} alt="silks-acrobat"/>
+        <img className={classes.img} src="https://res.cloudinary.com/tfiy/image/upload/v1606945617/the-floor-is-yours/home-page/9N7A7642_ubsrm2.jpg" alt="silks-acrobat"/>
       </Grid>
       <Grid item md={7} sm={12} className={classes.text}>
         <Typography className={classes.content}>

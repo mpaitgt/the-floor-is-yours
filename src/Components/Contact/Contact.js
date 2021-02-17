@@ -2,7 +2,6 @@ import React, {useState, useEffect, Fragment} from 'react';
 import Grow from '@material-ui/core/Grow';
 import Header from '../Header';
 import ContactForm from './ContactForm';
-import Map from '../../Images/somerville-map-the-floor-is-yours.jpg';
 import {Container, makeStyles, Grid} from '@material-ui/core';
 
 const useStyles = makeStyles(theme => ({
