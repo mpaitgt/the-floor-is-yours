@@ -1,5 +1,4 @@
 import React, {useState} from 'react';
-import * as emailjs from 'emailjs-com';
 import {TextField, Paper, makeStyles, Typography, Button} from '@material-ui/core';
 
 const useStyles = makeStyles(theme => ({

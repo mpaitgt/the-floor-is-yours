@@ -15,7 +15,7 @@ router.post('/api/send-mail', (req, res) => {
   });
   const contactForm = {
     from: req.body.email, // Sender address
-    to: 'mpaitgtdev@gmail.com',         // List of recipients
+    to: 'thefloorisyoursdancecenter@gmail.com', // List of recipients
     subject: `New message for The Floor Is Yours from ${req.body.name}`, // Subject line
     text: req.body.message,
     html: `<!doctype html>
