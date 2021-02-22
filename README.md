@@ -1,5 +1,47 @@
 # The Floor is Yours Dance Studio
 
-This is a freelance project I took on for a client starting her dance studio business in Somerset, New Jersey. The website is completely front-end, and was built using React, Material UI, and custom CSS. For the contact form, I implemented the Emailjs library as an npm package and used it in the Contact component.
+Local dance studio website. Built with React, Material UI, and Node.js/Express. Although the website doesn't necessarily _require_ reusable components and such, this project was a huge learning experience in building out a React app, React-Router, ES6 functions, and its relationship to the server side of things.
 
-[Check out the live site!](https://www.thefloorisyoursdancecenter.com/)
+## __Most fun: Building the Accordion__
+
+```
+// mapping over classes
+classArray.map(classItem => {
+  return (
+    <ClassAccordion classItem={classItem} />
+  )
+});
+
+// rendered class accordion
+const ClassAccordion = (props) => {
+  const classes = useStyles();
+
+  return (
+    <div>
+      <Accordion
+        expandIcon={<ExpandMoreIcon />}
+        aria-controls="class/instructor content"
+        className={classes.accordion}
+      >
+        <CustomAccordionSummary>
+          // my code
+        </CustomAccordionSummary>
+        <AccordionDetails>
+          // my code
+        </AccordionDetails>
+      </Accordion>
+    </div>
+  )
+}
+```
+
+## Most challenging: Server configuration and client build
+
+Technologies used: 
+__React, Material UI, Node.js/Express, Nodemailer__
+
+[Check out the live site at https://tfiy.herokuapp.com](https://www.tfiy.herokuapp.com/)
+
+---
+
+_Built by Matt Pignatore_
