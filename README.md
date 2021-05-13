@@ -45,7 +45,7 @@ Understanding this helped me understand the build, and understanding _that_ lent
 
 ---
 
-### [Check out the live site at https://tfiy.herokuapp.com 💃](https://www.tfiy.herokuapp.com/)
+### [Check out the live site at https://www.thefloorisyoursdancecenter.com/ 💃](https://www.thefloorisyoursdancecenter.com/)
 
 ---
 \
